@@ -1,0 +1,15 @@
+app:
+  name: joshix-poi-gateway-app
+  namespace: joshix
+  cluster: .apps.rosa-x4jc7.l07n.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/rhdh-gh/joshix-gateway
+  org: rhdh-gh
+  name: joshix-gateway
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: joshix/poi-gateway-app
+  tag: latest
